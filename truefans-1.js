@@ -296,6 +296,9 @@ function update() {
         clearInterval(interval);
         calculatescore();
         drawScore();
+        clearInterval(inter1);
+        clearInterval(inter2);
+        clearInterval(countdown);
     }
 
 start();
