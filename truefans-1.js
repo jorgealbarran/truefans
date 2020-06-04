@@ -250,7 +250,6 @@ function update() {
     const Yo=canvas.height/2;
 
     function calculatescore(){
-        var radius=0;
         population.forEach(person => {
             let dx=Math.abs(person.x-Xo);
             let dy=Math.abs(person.y-Yo);
@@ -261,8 +260,7 @@ function update() {
     }
 
     function calculatecost(){
-        cost=parseInt(cost+power.level/5);
-        //console.log(power.level+"-"+cost);
+        cost=parseInt(cost+power.level/3);
     }
 
     function drawCost() {
